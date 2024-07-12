@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
+    <link href="/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +22,11 @@
     <div class="all">
     <section class="menu">
         <header>
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Fulana de Tal</h3>
+            <div class="image">
+                <img src="assets\vector.png">
+                <h3 class="menu__title">Fulana de Tal</h3>
+            </div>
+            <a class="menu__list__item__contato" href="#contato">contato@fulana.com</a>
         </header>
         <nav>
             <ul class="menu__list">
@@ -31,9 +35,8 @@
                 <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                 <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
                 <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__list__item"><a href="#contato">Contato@fulana.com</a></li>
+                <li class="menu__list__item"><a href="#contato"><strong>Contato@fulana.com</strong></a></li>
             </ul>
-            <li class="menu__list__item__contato"><a href="#contato">contato@fulana.com</a></li>
         </nav>
     </section>
 

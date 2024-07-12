@@ -40,22 +40,71 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
-
+/* section.menu{
+    display: flex;
 }
+
+header{
+    width: 50vw;
+    display: flex;
+    justify-content:center;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+} */
 
 /*Sessão Title*/
+/* section.title{
+    background-color: aquamarine;
+    padding: 2vh 2vw;
+}
 
-section.title{
+.title__div{
+    background-color: rgb(183, 255, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+    padding: 2vh 2vw;
 
 }
 
+.title__container{
+    text-align:start;
+    text-wrap:balance;
+    width: 60%;
+}
+
+.title__bio{
+    font-size: xx-large;
+} */
 /*Sessão About*/
 
-section.about{
-
+/* section.about{
+    
+    padding: 1vh 1vw;
 }
 
+.about__container{
+    background-color: aqua;
+    padding: 1vh 3vw;
+} */
 /*Sessão Hobbies*/
 
 section.hobbies{
@@ -109,13 +158,124 @@ utilize como referência os breakpoints @media abaixo*/
 /*Mobile*/
 @media (min-width: 425px) {
 
+.all > *{
+    margin: 1vh 3vw;
+}
+
 /*Menu*/
+
+
+.menu__list{
+    display:none;
+}
+
+header{
+
+    background-color: blueviolet;
+    /* justify-content:center; */
+    gap: 4vw;
+    align-items: center;
+    font-size: small;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+}
 
 /*Titulo*/
 
+section.title{
+    padding: 1vh 2vw;
+    background-color: aqua;
+    display: flex;
+}
+
+.title__profile{
+    height: 20vh;
+    padding: 1vh 0;
+}
+
+.title__bio{
+    font-size: x-large;
+    text-wrap:balance;
+    text-align: start;
+    padding: 1vh 0;
+} 
+
+.title__container{
+    font-size: small;
+    text-wrap: balance;
+    text-align: start;
+}
+
+.title__container > *{
+    margin: 1vh 0;
+    background-color: rgb(129, 129, 210);
+}
+
+.title__network{
+    display: flex;
+    font-size: medium;
+    justify-content: space-between;
+}
+
 /*Sessão sobre*/
 
+section.about{
+    padding: 1vh 2vw;
+    background-color: rgb(9, 231, 5);
+    font-size: small;
+}
+
+.about__container > *{
+    background-color: rgb(231, 5, 114);
+    margin: 1vh 0;
+}
+
+.about__title{
+    font-size: x-large;
+}
+
 /*Skills*/
+
+.skills{
+    background-color: rgb(174, 223, 223);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills__title{
+    font-size: x-large;
+    margin: 1vh 0;
+}
+
+.skills__line{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2vh 5vw;
+    padding: 1vh 2vw;
+}
+
+.skills__line > *{
+    padding: 3vh 2vw;
+    justify-content: start ;
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: end;
+    height: 140px;
+    width: 130px;
+    
+}
+
+.skills__img >*{
+    height: 6vh;
+    margin: 1vh 0;
+}
 
 /*Hobbies*/
  
