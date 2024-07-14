@@ -46,8 +46,6 @@ button:hover{
 .sm{
     width: 2vh;
 }
-/*Mobile*/
-@media (min-width: 425px) {
 
 .all{
     width: 100vw;
@@ -287,6 +285,4 @@ input:focus,textarea:focus{
     width: 50vw;
     margin: 1vh 0;
  }
-/*Footer*/
 
-}
